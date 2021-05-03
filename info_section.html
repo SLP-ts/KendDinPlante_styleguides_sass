@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .plantinfo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .plantinfo__info {
+            display: grid;
+            align-content: center;
+            gap: 20px;
+        }
+
+        .plantinfo__content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .plantinfo__text {
+            opacity: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="plantinfo">
+        <img src="assets/plant 4.png">
+        <section class="plantinfo__info">
+            <section class="plantinfo__content">
+                <img src="assets/Water.png">
+                <p class="plantinfo__text">1 times a week</p>
+            </section>
+            <section class="plantinfo__content">
+                <img src="assets/Sun.png">
+                <p class="plantinfo__text">In the shade</p>
+            </section>
+            <section class="plantinfo__content">
+                <img src="assets/Poo.png">
+                <p class="plantinfo__text">1 times every 2 weeks</p>
+            </section>
+            <section class="plantinfo__content">
+                <img src="assets/Thermometer.png">
+                <p class="plantinfo__text">7 - 20 C</p>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

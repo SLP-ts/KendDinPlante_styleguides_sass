@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .stats__content {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 10px;
+        }
+
+        .stats__text {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            gap: 5px;
+        }
+
+        .stats__pic {
+            width: 30px;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .stats__stat {
+            opacity: 50%;
+        }
+
+        .stats__content--sun {
+            display: grid;
+            width: 60%;
+            margin: auto;
+        }
+
+        .stats__text--sun {
+            display: grid;
+            gap: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="stats">
+        <section class="stats__content">
+            <img class="stats__pic" src="assets/Water.png">
+            <section class="stats__text">
+                <p class="stats__title">Times Watered:</p>
+                <p class="stats__stat">12</p>
+            </section>
+        </section>
+        <section class="stats__content">
+            <img class="stats__pic" src="assets/poo.png">
+            <section class="stats__text">
+                <p class="stats__title">Times Fertilized:</p>
+                <p class="stats__stat">5</p>
+            </section>
+        </section>
+    </section>
+    <section class="stats__content stats__content--sun">
+        <img class="stats__pic" src="assets/Sun.png">
+        <section class="stats__text stats__text--sun">
+            <p class="stats__title">Days Alive:</p>
+            <p class="stats__stat">5</p>
+        </section>
+    </section>
+</body>
+
+</html>
