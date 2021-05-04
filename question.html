@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .question {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            justify-items: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .button {
+            margin: 5px;
+            padding: 5px;
+            width: 200px;
+            height: 70px;
+            background-color: #D3DFB0;
+            border:none;
+            font-size: 20px;
+        }
+
+        .fadedbutton {
+            background: none;
+            border: none;
+            opacity: 50%;
+            font-size: 16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="question">
+        <img class="question__arrow" src="assets/squiggly arrow2.png">
+        <section class="question__answers">
+            <button class="button">Small</button><br>
+            <button class="button">Medium</button><br>
+            <button class="button">Large</button><br>
+            <button class="button">Girnormeous</button><br>
+            <button class="fadedbutton">Don't Know</button>
+        </section>
+        <img class="question__arrow" src="assets/squiggly arrow.png">
+    </section>
+    
+</body>
+</html>
