@@ -1,0 +1,19 @@
+.plantinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__info {
+        display: grid;
+        align-content: center;
+        gap: 20px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    &__text {
+        opacity: 50%;
+    }
+}

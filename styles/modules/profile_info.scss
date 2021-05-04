@@ -1,0 +1,18 @@
+.profileInfo {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: 80%;
+    margin: auto;
+
+    &__title {
+        font-size: 24px;
+        vertical-align: center;
+    }
+
+    &__content {
+        line-height: 42px;
+        vertical-align: center;
+        font-size: 18px;
+        opacity: 50%;
+    }
+}
