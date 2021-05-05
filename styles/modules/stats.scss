@@ -1,0 +1,38 @@
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 10px;
+    }
+
+    &__text {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        gap: 5px;
+    }
+
+    &__pic {
+        width: 30px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    &__stat {
+        opacity: 50%;
+    }
+
+    &__content--sun {
+        display: grid;
+        width: 60%;
+        margin: auto;
+    }
+
+    &__text--sun {
+        display: grid;
+        gap: 10px;
+        text-align: center;
+    }
+}
