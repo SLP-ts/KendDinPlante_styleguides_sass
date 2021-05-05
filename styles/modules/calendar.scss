@@ -1,10 +1,8 @@
 ul {list-style-type: none;}
 
-
 /* Month header */
 .month {
-padding: 70px 25px;
-width: 50%;
+width: 100vw;
 background: #1abc9c;
 text-align: center;
 }
@@ -13,6 +11,7 @@ text-align: center;
 .month ul {
 margin: 0;
 padding: 0;
+width: 100vw;
 }
 
 .month ul li {
@@ -20,6 +19,7 @@ color: white;
 font-size: 20px;
 text-transform: uppercase;
 letter-spacing: 3px;
+
 }
 
 /* Previous button inside month header */
@@ -39,6 +39,8 @@ padding-top: 10px;
 margin: 0;
 padding: 10px 0;
 background-color:#ddd;
+width: 100%;
+width: 100vw;
 }
 
 .weekdays li {
@@ -53,6 +55,7 @@ text-align: center;
 padding: 10px 0;
 background: #eee;
 margin: 0;
+width: 100vw;
 }
 
 .days li {

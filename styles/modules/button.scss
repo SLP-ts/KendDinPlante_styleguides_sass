@@ -1,21 +1,19 @@
+@import 'general/index.scss';
+
 .button {
     margin: 5px;
     padding: 5px;
     width: 200px;
     height: 70px;
-    background-color: #D3DFB0;
+    background-color: $secondary_color;
     border:none;
     font-size: 20px;
+    font-family: $font_title;
+    color: whitesmoke;
 }
 
-////
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
+.-smallbutton {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+}

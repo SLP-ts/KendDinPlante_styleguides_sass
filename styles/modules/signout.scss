@@ -1,7 +1,20 @@
+@import 'general/index.scss';
+
 .fadedbutton {
     background: none;
     border: none;
-    opacity: 50%;
-    font-size: 16px;
-    margin: auto;
+    opacity: 70%;
+    font-size: 18px;
+    margin: 20px;
+    margin-top: 40px;
+    font-family: $font_title;
+}
+
+.--nomargin {
+    margin-top: 0px;
+}
+
+.centerbutton {
+    display: grid;
+    justify-content: center;
 }
