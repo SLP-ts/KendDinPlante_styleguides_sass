@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h2 class="title">Calendar</h2>
+    <section class="month">
+        <ul>
+          <li class="prev">&#10094;</li>
+          <li class="next">&#10095;</li>
+          <li>February<br><span style="font-size:18px">2021</span></li>
+        </ul>
+    </section>
+      
+      <ul class="weekdays">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+      </ul>
+      
+      <ul class="days">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+      </ul>
+      <section class="collapsibleButton">
+        <button type="button" class="collapsibleButton__button">Today's event</button>
+        <article class="collapsibleButton__content">
+            <p>Water plants</p>
+        </article>
+    </section>
+
+
+
+ <script>
+/*  Component: collapsibleButton
+ *  Has an active button part that when clicked, toggles the display of a content part
+ *      .collapsibleButton              [main component container]
+ *      .collapsibleButton__button      [button element]
+ *      .collapsibleButton__content     [content element]
+ *      .--active                       [modifier to indicate if content is show]
+ */
+    
+// Set up variable and constants
+
+    // All the components on the current page
+    const collapsibleButtons = document.querySelectorAll('.collapsibleButton');
+
+    // loop through all of them and setup eventhandlers
+    for(let i=0; i<collapsibleButtons.length; i++) {
+        collapsibleButtons[i].addEventListener('click', function (event) {
+            console.log('clicked on:', event.target);
+            // Call the function that handles the toggle of classes
+            // Send along the reference to which element what clicked on (event.target)
+            collapsibleToggle(event.target);
+        });
+    }
+
+    function collapsibleToggle(element) {
+        console.log('handling toggle of', element);
+        // navigate to parrent node (the container element)
+        let container = element.parentNode;
+        // Toggle the .--active class for the container
+        container.classList.toggle('--active');
+    }
+
+
+
+    </script>    
+
+  <img class= "favoritePlant_pic" src="assets/flowers 1.png" alt="">  
+</body>
+</html>
