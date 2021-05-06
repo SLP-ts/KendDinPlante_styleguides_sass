@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design system example</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Oxygen:wght@300;400;700&display=swap">    
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Poiret+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">    
+<link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="styleguide.css">
 </head>
 <body>
@@ -17,22 +20,122 @@
                     <a href="#colors" class="menu__link">Colors</a>
                 </li>
                 <li class="menu__item">
+                    <a href="#fonts" class="menu__link">Fonts</a>
+                </li>
+                <li class="menu__item">
                     <a href="#buttons" class="menu__link">Buttons</a>
                 </li>
+                <li class="menu__item">
+                    <a href="#module" class="menu__link">Modules</a>
+                </li>
+                
             </ul>
         </nav>
     </header>
     <section class="module" id="colors">
-        <h2 class="title">Colors</h2>
+        <h2 class="titlestyle">Colors</h2>
     </section>
-    <section class="module" id="colors">
-        <h2 class="title">Fonts</h2>
+    <section class="color --background">Background Color - #fdfff3</section>
+    <section class="color --secondary">Secondary Color - #588865</section>
+    <section class="color --neutral">Neutral - White</section>
+    <section class="color --border">Border - Grey</section>
+    <section class="module" id="fonts">
+        <h2 class="titlestyle">Fonts</h2>
     </section>
+    <h2 class="fonts --title">This is a title font</h2>
+    <p class="fonts --body">This is a body font</p>
     <section class="module" id="buttons">
-        <h2 class="title">Buttons</h2>
+        <h2 class="titlestyle">Buttons</h2>
     </section>
-    <section class="module" id="colors">
-        <h2 class="title">Modules</h2>
+        <button class="button">Standard Button</button>
+        <button class="button -smallbutton">Smaller Button</button>
+        <button class="fadedbutton">Faded button</button>
+        <section class="collapsibleButton">
+            <button type="button" class="collapsibleButton__button">Collapsible Button</button>
+            <article class="collapsibleButton__content">
+                <p>Water plants</p>
+            </article>
+        </section>
+    <section class="module" id="module">
+        <h2 class="titlestyle">Modules</h2>
     </section>
+    <figure class="avatar avatar-sm">
+        <p>Avatar:</p>
+        <img src="../assets/avatar.png" alt="avatar">
+      </figure>
+      <p>Input form:</p>
+      <form>
+        <h2 class="undertitle">E-mail</h2>
+        <section class="centerbutton"><input class="input" type="text" placeholder="Enter Your E-mail"></section>
+    </form>
+    <p>Menu:</p>
+    <nav class="menu">
+        <a href=""><i class="fas fa-calendar-alt"></i></a>
+        <a href=""><i class="fas fa-camera"></i></a>
+        <a href=""><i class="fas fa-plus-square"></i></a>
+        <a href=""><i class="fas fa-address-book"></i></a>
+        <a href=""><i class="fas fa-book"></i></a>
+      
+      </nav>
+
+      <p>Profile Info:</p>
+      <section class="profileInfo">
+        <p class="profileInfo__title">Name:</p>
+        <p class="profileInfo__content">Pana</p>
+        <p class="profileInfo__title">E-mail:</p>
+        <p class="profileInfo__content">Pana@gmail.com</p>
+        <p class="profileInfo__title">Garden ID:</p>
+        <p class="profileInfo__content">0000-1234-5678</p>
+    </section>
+
+    <p>Info section:</p>
+    <section class="plantinfo">
+        <img src="../assets/plant4.png">
+        <section class="plantinfo__info">
+            <section class="plantinfo__content">
+                <img src="../assets/Water.png">
+                <p class="plantinfo__text">1 times a week</p>
+            </section>
+            <section class="plantinfo__content">
+                <img src="../assets/Sun.png">
+                <p class="plantinfo__text">In the shade</p>
+            </section>
+            <section class="plantinfo__content">
+                <img src="../assets/Poo.png">
+                <p class="plantinfo__text">1 times every 2 weeks</p>
+            </section>
+            <section class="plantinfo__content">
+                <img src="../assets/Thermometer.png">
+                <p class="plantinfo__text">7 - 20 C</p>
+            </section>
+        </section>
+    </section>
+
+    <p>Stats:</p>
+    <section class="stats">
+        <section class="stats__content">
+            <img class="stats__pic" src="../assets/Water.png">
+            <section class="stats__text">
+                <p class="stats__title">Times Watered:</p>
+                <p class="stats__stat">12</p>
+            </section>
+        </section>
+        <section class="stats__content">
+            <img class="stats__pic" src="../assets/poo.png">
+            <section class="stats__text">
+                <p class="stats__title">Times Fertilized:</p>
+                <p class="stats__stat">5</p>
+            </section>
+        </section>
+    </section>
+    <section class="stats__content stats__content--sun">
+        <img class="stats__pic" src="../assets/Sun.png">
+        <section class="stats__text stats__text--sun">
+            <p class="stats__title">Days Alive:</p>
+            <p class="stats__stat">5</p>
+        </section>
+    </section>
+
+    <script src="../calendar.js"></script>
 </body>
 </html>

@@ -1,9 +1,15 @@
 body {
     background-color: rgb(196, 196, 226);
+    font-size: 24px;
 }
 
+p {
+    text-align: center;
+}
 
-
+.titlestyle {
+    text-align: center;
+}
 
 .menu {
     text-align: right;
@@ -41,3 +47,38 @@ body {
 }
 
 
+.color {
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+}
+
+.--background {
+    background-color: #fdfff3;
+}
+
+.--secondary {
+    background-color: #588865;
+}
+
+.--neutral {
+    background-color: white;
+}
+
+.--border {
+    background-color: grey;
+}
+
+.fonts {
+    text-align: center;
+}
+
+.--title {
+font-size: 36px;
+font-family: 'New Tegomin', serif;
+}
+
+.--body {
+    font-size: 24px;
+    font-family: 'Poiret One';
+}
