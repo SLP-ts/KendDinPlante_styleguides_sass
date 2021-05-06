@@ -14,7 +14,7 @@
 <body>
   <section class="profiletitle">
     
-    <img class="avatar --small" src="assets/avatar.png" alt="avatar">
+    <a href="Myprofile_screen.html"><img class="avatar --small" src="assets/avatar.png" alt="avatar"></a>
  
   <h2 class="title">My Garden</h2>
 </section>
@@ -22,17 +22,21 @@
 <section class="scrolling-wrapper">
   <img class="scrolling-wrapper__image" src="assets/scrolltest.png">
 </section>
+
+<!-- Draggable DIV -->
+<div id="mydiv">
+  <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+  <img id="mydivheader" src="assets/flowers1.png">
+</div>
  
 <nav class="menu">
-        <a href=""><i class="fas fa-calendar-alt"></i></a>
+        <a href="calendar_screen.html"><i class="fas fa-calendar-alt"></i></a>
         <a href=""><i class="fas fa-camera"></i></a>
-        <a href=""><i class="fas fa-plus-square"></i></a>
+        <a href="newplant_screen.html"><i class="fas fa-plus-square"></i></a>
         <a href=""><i class="fas fa-address-book"></i></a>
         <a href=""><i class="fas fa-book"></i></a>
-      
       </nav>
 
-<img class="mygarden__image" draggable="true" src="assets/Poo.png">
-
+<script src="garden.js"></script>
 </body>
 </html>

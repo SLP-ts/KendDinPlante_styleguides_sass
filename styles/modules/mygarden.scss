@@ -8,3 +8,9 @@
     overflow-y: hidden;
     white-space: nowrap;
   }
+
+  #mydiv {
+    position: absolute;
+    z-index: 9;
+    top: 300px;
+  }

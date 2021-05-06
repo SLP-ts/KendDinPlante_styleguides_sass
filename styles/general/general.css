@@ -1,0 +1,15 @@
+body {
+  font-family: "Poiret One", cursive;
+  font-weight: 700;
+  background-color: #fdfff3;
+  padding: 10px;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
